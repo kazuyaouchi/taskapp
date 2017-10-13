@@ -5,7 +5,7 @@
     <li>
       <%= check_box_tag '','', task.done, {'data-id' => task.id, 'data-project_id'=> task.project_id} %>
       <%= task.title %>
-      <%= link_to"[Deleate]",project_task_path(task.project_id,task.id),method: :delete,data:{confirm: "are you sure?"} %></li>
+      <%= link_to"[削除]",project_task_path(task.project_id,task.id),method: :delete,data:{confirm: "削除しますか?"} %></li>
     </li>
   <% end %>
     <li>
